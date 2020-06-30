@@ -1,14 +1,17 @@
-.activate
+.activate#activate-block
     .container
         .activate-title Один шаг, чтобы воспользоваться сервисом на все 100%
         .activate-form-wrap
-            form.activate-form
-                input(type="text" placeholder="№ договора")
-                input(type="date" placeholder="Дата события")
-                input(type="phone" placeholder="Контактный телефон")
-                input(type="phone" placeholder="Телефон ответственного сотрудника")
-                input(type="text" placeholder="Номер и адрес магазина, фиксирующего обращение")
-                input(type="text" placeholder="Причина повреждения")
-                input(type="textarea" placeholder="Комментарий" rows="3")
-                button.activate-button(type="submit") АКТИВИРОВАТЬ
-
+            .activate-form
+                form
+                    input(type="text" placeholder="Тип устройства")
+                    input(type="text" placeholder="Марка и модель гаджета")
+                    input(type="phone" placeholder="IMEI (S/N) устройства")
+                    input(type="phone" placeholder="Номер договора")
+                    input(type="text" placeholder="Фамилия")
+                    input(type="text" placeholder="Имя")
+                    input(type="text" placeholder="Отчество")
+                    input(type="text" placeholder="Контактный телефон")
+                    input(type="text" placeholder="e-mail магазина")
+                    button.activate-button.red-button(type="submit") АКТИВИРОВАТЬ
+            #activate-button-wrap.red-button АКТИВИРОВАТЬ

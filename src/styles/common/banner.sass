@@ -40,11 +40,15 @@
     &-title
         font-size: 80px
         font-weight: 900
+        @include laptop
+            font-size: 48px
     &-text
         font-size: 24px
         font-weight: 400
         line-height: 1.7
         position: relative
+        @include laptop
+            font-size: 18px
     &-detailed
         margin-top: 100px
         @include tablet

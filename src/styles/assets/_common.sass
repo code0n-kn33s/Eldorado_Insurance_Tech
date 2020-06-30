@@ -14,14 +14,15 @@ body
     font-size: 13px
 
 .container
-  width: $container-width
+  max-width: 1200px
   margin: auto
+  @include desktop
+    width: 992px
   @include laptop
-    width: 980px
-  @include tablet
     width: 768px
-  @include mobile
-    width: 480px
+  @include tablet
+    width: unset
+    padding: 0 20px
 .icon
   display: inline-block
   user-select: none

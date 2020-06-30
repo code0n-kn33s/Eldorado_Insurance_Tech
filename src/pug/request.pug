@@ -2,15 +2,13 @@
     .container
         .request-title Один шаг, чтобы воспользоваться сервисом на все 100%
         .request-form-wrap
-            form.request-form
-                input(class="request-form-input" type="text" placeholder="№ договора")
-                input(class="request-form-input" type="date" placeholder="Дата события")
-                input(class="request-form-input" type="phone" placeholder="Контактный телефон")
-                input(class="request-form-input" type="phone" placeholder="Телефон ответственного сотрудника")
-                input(class="request-form-input" type="text" placeholder="Номер и адрес магазина, фиксирующего обращение")
-                select.request-form-input
-                    option Уронили
-                    option Потопили
-                    option Наступили
-                input(class="request-form-input" type="textarea" placeholder="Комментарий" rows="3")
-                button.request-button.red-button(type="submit") сформировать заявку
+            .request-form
+                form
+                    input(class="request-form-input" type="text" placeholder="№ договора")
+                    input(class="request-form-input" type="text" placeholder="Дата события")
+                    input(class="request-form-input" type="phone" placeholder="Контактный телефон")
+                    input(class="request-form-input" type="phone" placeholder="Телефон ответственного сотрудника")
+                    input(class="request-form-input" type="text" placeholder="Номер и адрес магазина, фиксирующего обращение")
+                    textarea(class="request-form-input" placeholder="Комментарий" rows="7")
+                    button.request-button.red-button(type="submit") сформировать заявку
+            #request-button-wrap.red-button сформировать заявку

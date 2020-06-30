@@ -6,11 +6,17 @@
     text-align: center
     color: $firmed
     margin-bottom: 80px
+    @include tablet
+        margin-bottom: 50px
 .instructions-list
     display: grid
     grid-template-columns: repeat(4, 1fr)
-    grid-auto-rows: minmax(100px, auto)
-    gap: 1vh
+    gap: 70px 30px
+    @include desktop
+        grid-template-columns: repeat(2, 1fr)
+    @include laptop
+        grid-template-columns: 1fr
+
 .instructions-list-item
     background: #EFF6F9
     padding: 20px 34px
@@ -24,9 +30,13 @@
     color: $firmed
 .instructions-top-step
     position: absolute
-    bottom: 0
-    right: 0
-    width: 70%
+    bottom: -35px
+    right: -60px
+    width: 200px
+    @include tablet
+        width: 150px
+        bottom: -15px
+        right: -30px
 
 .instructions-bottom
 .instructions-bottom-title
