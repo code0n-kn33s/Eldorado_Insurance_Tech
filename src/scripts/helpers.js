@@ -10,6 +10,9 @@ export function scrollTo(clicked, scrolled) {
 }
 
 export function toggleClass(clickElem, toggleElem, toggleClass) {
+    console.log('clickElem', clickElem )
+    console.log('toggleElem', toggleElem )
+    console.log('toggleClass', toggleClass )
     document.querySelector(clickElem).addEventListener('click',
         function () {
             document.querySelector(toggleElem).classList.toggle(toggleClass)
