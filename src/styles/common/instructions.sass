@@ -7,14 +7,17 @@
     color: $firmed
     margin-bottom: 80px
     @include tablet
-        margin-bottom: 50px
+        font-size: 34px
+        margin-bottom: 70px
+    @include mobile
+        font-size: 24px
 .instructions-list
     display: grid
     grid-template-columns: repeat(4, 1fr)
     gap: 70px 30px
     @include desktop
         grid-template-columns: repeat(2, 1fr)
-    @include laptop
+    @include mobile
         grid-template-columns: 1fr
 
 .instructions-list-item
@@ -28,6 +31,8 @@
     font-weight: 800
     font-size: 70px
     color: $firmed
+    @include tablet
+        font-size: 40px
 .instructions-top-step
     position: absolute
     bottom: -35px

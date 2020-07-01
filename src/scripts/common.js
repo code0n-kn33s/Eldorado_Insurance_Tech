@@ -11,5 +11,12 @@ import { unmountMenu } from './unmountMenu'
     // hamburger menu
     toggleClass('#header-dropdown', '#nav-icon3', 'open');
     unmountMenu('.header-dropdown', '#nav-icon3', 'open')
+    //header menu
+    scrollTo('#fullWork', '#instructions');
+    scrollTo('#fullActivate', '#activate-block');
+    scrollTo('#fullRequest', '#request');
+    scrollTo('#smallWork', '#instructions');
+    scrollTo('#smallActivate', '#activate-block');
+    scrollTo('#smallRequest', '#request');
 })()
 
