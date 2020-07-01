@@ -4,7 +4,12 @@
         .activate-form-wrap
             .activate-form
                 form
-                    input(type="text" placeholder="Тип устройства")
+                    .custom-select
+                        select(name="device")
+                            option(selected disabled) Тип устройства
+                            option(value="laptop") Laptop
+                            option(value="Notebook") Notebook
+                            option(value="mobile") Mobile
                     input(type="text" placeholder="Марка и модель гаджета")
                     input(type="phone" placeholder="IMEI (S/N) устройства")
                     input(type="phone" placeholder="Номер договора")

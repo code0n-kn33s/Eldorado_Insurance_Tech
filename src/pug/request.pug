@@ -9,6 +9,12 @@
                     input(class="request-form-input" type="phone" placeholder="Контактный телефон")
                     input(class="request-form-input" type="phone" placeholder="Телефон ответственного сотрудника")
                     input(class="request-form-input" type="text" placeholder="Номер и адрес магазина, фиксирующего обращение")
+                    .custom-select
+                        select(name="device")
+                            option(selected disabled) Причина повреждения
+                            option(value="crash") Наступил
+                            option(value="smash") Уронил
+                            option(value="drowned") Потопил
                     textarea(class="request-form-input" placeholder="Комментарий" rows="7")
                     button.request-button.red-button(type="submit") сформировать заявку
             #request-button-wrap.red-button сформировать заявку

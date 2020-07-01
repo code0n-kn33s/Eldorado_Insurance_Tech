@@ -3,34 +3,52 @@
 
 .custom-select
   position: relative
+  margin-bottom: 15px
 
 .custom-select select
   display: none
 
 .select-selected:after
   position: absolute
-  content: ""
+  content: "\276F"
+  transform: rotate(90deg)
+  color: #e72d2b
+  display: inline-block
+  height: 23px
+  font-size: 20px
+  font-weight: 600
   top: 0
   bottom: 0
   margin: auto
-  right: 10px
-  width: 0
-  height: 0
-  border: 6px solid transparent
-  border-color: #fff transparent transparent transparent
+  right: 20px
+  line-height: 1
+  // triangle
+  // border: 6px solid transparent
+  // border-color: $firmed transparent transparent transparent
+
 
 .select-selected.select-arrow-active:after
-  border-color: transparent transparent #fff transparent
-  top: -10px
+  transition: .3s ease-in
+  transform: rotate(270deg)
+  // border-color: transparent transparent $firmed transparent
+  // top: -10px
 
 .select-items,.select-selected
-  color: #ffffff
-  padding: 8px 16px
-  border: 1px solid #80cade
+  color: #8DABB8
+  border: 1px solid #5d7b88
   cursor: pointer
   line-height: 36px
-  border-radius: 7px
-  background-color: #1e252b
+  font-size: 18px
+  font-family: $font
+  border-radius: 4px
+  background-color: white
+
+.select-selected
+  padding: 8px 16px
+
+.select-items
+  div
+    padding: 8px 16px
 
 .select-items
   position: absolute

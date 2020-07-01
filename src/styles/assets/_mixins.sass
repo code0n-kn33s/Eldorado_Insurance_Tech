@@ -20,6 +20,10 @@ $firmed: #e72d2b
         clear: both
 /* @ include clearfix */
 
+@mixin large
+  @media (min-width: 1366px)
+    @content
+
 @mixin desktop
   @media (max-width: 1200px)
     @content
