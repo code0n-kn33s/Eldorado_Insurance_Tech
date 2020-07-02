@@ -460,6 +460,7 @@ body {
   font-size: 22px;
   letter-spacing: 1.5px;
   color: white;
+  height: 50px;
   border-radius: 30px;
   text-align: center;
   padding: 12px 20px;
@@ -586,13 +587,18 @@ body {
   margin-top: -88px;
   position: relative;
   width: 100%;
-  padding: 0 97px; }
+  padding: 0 97px;
+  overflow: hidden; }
   @media (max-width: 1200px) {
     .banner-wrap {
       padding: 0 20px; } }
+  @media (max-width: 768px) {
+    .banner-wrap {
+      background-image: url(img/background_tablet.jpg); } }
   @media (max-width: 480px) {
     .banner-wrap {
-      padding: 0 10px; } }
+      padding: 0 10px;
+      background-image: url(img/background_mobile.jpg); } }
 
 .banner {
   color: #fff;
@@ -603,14 +609,12 @@ body {
   height: 55vh;
   display: flex;
   height: 60%;
+  width: 100%;
   flex-direction: column;
   justify-content: space-around; }
   @media (max-width: 768px) {
     .banner {
-      height: 127px; } }
-  @media (max-width: 480px) {
-    .banner {
-      height: 197px; } }
+      height: 100%; } }
   .banner-title, .banner-text {
     line-height: 1.29; }
     @media (max-width: 480px) {
@@ -619,22 +623,37 @@ body {
   .banner-title {
     font-size: 80px;
     font-weight: 900; }
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
       .banner-title {
         font-size: 48px; } }
   .banner-text {
     font-size: 24px;
     font-weight: 400;
     line-height: 1.7;
-    position: relative; }
-    @media (max-width: 992px) {
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 15px; }
+    .banner-text br {
+      display: none; }
+    @media (max-width: 768px) {
       .banner-text {
         font-size: 18px; } }
+    @media (max-width: 480px) {
+      .banner-text br {
+        display: block; } }
+  @media (max-width: 768px) {
+    .banner-description {
+      position: absolute;
+      top: 20%; } }
   .banner-detailed {
-    margin-top: 100px; }
+    position: absolute;
+    bottom: 10%;
+    margin: auto;
+    right: 0;
+    left: 0; }
     @media (max-width: 768px) {
       .banner-detailed {
-        margin-top: 27px; } }
+        text-align: center; } }
 
 .banner-scroll-to-bottom {
   position: absolute;
@@ -642,7 +661,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  left: 0;
+  left: 50px;
   right: 0;
   bottom: 17px;
   margin: auto; }
