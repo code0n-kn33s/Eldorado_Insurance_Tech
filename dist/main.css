@@ -527,10 +527,7 @@ body {
 
 #activate-button-wrap, #request-button-wrap {
   display: block;
-  margin: auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content; }
+  margin: auto; }
 
 .header {
   display: flex;
