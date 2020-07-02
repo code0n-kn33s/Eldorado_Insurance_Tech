@@ -722,7 +722,7 @@ body {
     .instructions-list {
       grid-template-columns: repeat(2, 1fr);
       gap: 70px 40px; } }
-  @media (max-width: 480px) {
+  @media (max-width: 640px) {
     .instructions-list {
       grid-template-columns: auto; } }
 
