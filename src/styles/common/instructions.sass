@@ -17,8 +17,9 @@
     gap: 70px 30px
     @include desktop
         grid-template-columns: repeat(2, 1fr)
+        gap: 70px 40px
     @include mobile
-        grid-template-columns: 1fr
+        grid-template-columns: repeat(1, 1fr)
 
 .instructions-list-item
     background: #EFF6F9
@@ -49,6 +50,10 @@
     font-weight: 600
     color: #5d7b88
     margin-bottom: 10px
+    @include tablet
+        font-size: 18px
 .instructions-bottom-text
     font-size: 18px
+    @include tablet
+        font-size: 14px
 .instructions-list-item

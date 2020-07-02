@@ -21,31 +21,23 @@ $firmed: #e72d2b
 /* @ include clearfix */
 
 @mixin large
-  @media (min-width: 1366px)
-    @content
+    @media (min-width: 1366px)
+        @content
 
 @mixin desktop
-  @media (max-width: 1200px)
-    @content
+    @media (max-width: 1200px)
+        @content
 
 @mixin laptop
-  @media (max-width: 992px)
-    @content
+    @media (max-width: 992px)
+        @content
 
 @mixin tablet
-  @media (max-width: 768px)
-    @content
+    @media (max-width: 768px)
+        @content
 
 @mixin mobile
-  @media (max-width: 480px)
-    @content
-// @ include tablet
+    @media (max-width: 480px)
+        @content
 
-/* px to rem*/
-@function rem($pixels, $context: $baseFontSize)
-  @if (unitless($pixels))
-    $pixels: $pixels * 1px
-  @if (unitless($context))
-    $context: $context * 1px
-  @return $pixels / $context * 1rem
-  // rem(20) -- 20px
+// @ include tablet
